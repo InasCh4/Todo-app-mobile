@@ -7,8 +7,9 @@ import {
   useState,
 } from "react";
 
-// AsyncStorage is React Native’s simple, promise-based API for persisting small bits of data on a user’s device. Think of it as the mobile-app equivalent of the browser’s localStorage, but asynchronous and cross-platform.
-
+// AsyncStorage is React Native’s simple, promise-based API for persisting small bits
+//of data on a user’s device. Think of it as the mobile-app equivalent
+//  of the browser’s localStorage, but asynchronous and cross-platform.
 export interface ColorScheme {
   bg: string;
   surface: string;
@@ -38,57 +39,58 @@ export interface ColorScheme {
 }
 
 const lightColors: ColorScheme = {
-  bg: "#f8fafc",
-  surface: "#ffffff",
-  text: "#1e293b",
-  textMuted: "#64748b",
-  border: "#e2e8f0",
-  primary: "#3b82f6",
-  success: "#10b981",
-  warning: "#f59e0b",
-  danger: "#ef4444",
+  bg: "#FFF7FB", // blush white
+  surface: "#FFFFFF", // cards
+  text: "#2B1B24", // deep plum
+  textMuted: "#7A5B6B", // muted mauve
+  border: "#F3D7E6", // soft pink border
+  primary: "#FF4DA6", // main pink
+  success: "#2EC4A6", // mint (pairs well with pink)
+  warning: "#FFB020", // warm honey
+  danger: "#FF3B5C", // rosy red
   shadow: "#000000",
   gradients: {
-    background: ["#f8fafc", "#e2e8f0"],
-    surface: ["#ffffff", "#f8fafc"],
-    primary: ["#3b82f6", "#1d4ed8"],
-    success: ["#10b981", "#059669"],
-    warning: ["#f59e0b", "#d97706"],
-    danger: ["#ef4444", "#dc2626"],
-    muted: ["#9ca3af", "#6b7280"],
-    empty: ["#f3f4f6", "#e5e7eb"],
+    background: ["#FFF7FB", "#FDE7F2"],
+    surface: ["#FFFFFF", "#FFF0F7"],
+    primary: ["#FF4DA6", "#E6007A"],
+    success: ["#2EC4A6", "#159F86"],
+    warning: ["#FFB020", "#F08A00"],
+    danger: ["#FF3B5C", "#E11D48"],
+    muted: ["#C9A4B6", "#8B6B7A"],
+    empty: ["#FFF0F7", "#F7D9E8"],
   },
   backgrounds: {
-    input: "#ffffff",
-    editInput: "#ffffff",
+    input: "#FFFFFF",
+    editInput: "#FFF0F7",
   },
+
   statusBarStyle: "dark-content" as const,
 };
 
 const darkColors: ColorScheme = {
-  bg: "#0f172a",
-  surface: "#1e293b",
-  text: "#f1f5f9",
-  textMuted: "#94a3b8",
-  border: "#334155",
-  primary: "#60a5fa",
-  success: "#34d399",
-  warning: "#fbbf24",
-  danger: "#f87171",
+  bg: "#120A10",
+  surface: "#1C111A",
+  text: "#FFEAF4",
+  textMuted: "#D2A9BC",
+  border: "#3A2131",
+  primary: "#FF4DA6",
+  success: "#2EC4A6",
+  warning: "#FFB020",
+  danger: "#FF3B5C",
   shadow: "#000000",
   gradients: {
-    background: ["#0f172a", "#1e293b"],
-    surface: ["#1e293b", "#334155"],
-    primary: ["#3b82f6", "#1d4ed8"],
-    success: ["#10b981", "#059669"],
-    warning: ["#f59e0b", "#d97706"],
-    danger: ["#ef4444", "#dc2626"],
-    muted: ["#374151", "#4b5563"],
-    empty: ["#374151", "#4b5563"],
+    background: ["#120A10", "#1C0F18"],
+    surface: ["#1C111A", "#241423"],
+    primary: ["#FF4DA6", "#B3005E"],
+    success: ["#2EC4A6", "#0F8B73"],
+    warning: ["#FFB020", "#C96A00"],
+    danger: ["#FF3B5C", "#BE123C"],
+    muted: ["#6E4A5C", "#3A2131"],
+    empty: ["#241423", "#1C111A"],
   },
   backgrounds: {
-    input: "#1e293b",
-    editInput: "#0f172a",
+    input: "#241423",
+    editInput: "#2A1630",
   },
   statusBarStyle: "light-content" as const,
 };
