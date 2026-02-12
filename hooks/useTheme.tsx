@@ -92,6 +92,7 @@ const darkColors: ColorScheme = {
     input: "#241423",
     editInput: "#2A1630",
   },
+  // In dark mode, we want light text on a dark background, so we use "light-content" for the status bar to ensure the icons and text are visible against the dark background.
   statusBarStyle: "light-content" as const,
 };
 
